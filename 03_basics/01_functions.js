@@ -25,6 +25,14 @@ function addTwoNumber(number1, number2) {
 const result = addTwoNumber(2,3)
 // console.log(result); 
 
-function loginUserMessage(username){
+function loginUserMessage(username = "Nobody"){ // Aaise default value de di jati hai 
+    // if(!username){
+    //     console.log("Please Enter the name..");
+    //     return
+    // }
     return `${username} just logged in !!`
 }
+
+console.log(loginUserMessage("Shashwat"));
+console.log(loginUserMessage());
+// agr kuch na pass kiya jaye argument me to undefined aata hai 
