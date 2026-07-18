@@ -1,7 +1,7 @@
 // Immediately Invoked Function Expression (IIFE)
 
 // Jo function immediately execute ho jaye aur global variables unhe polute na kr paye vo IIFE function hote hai
-
+  
 (function chai(){ // Ye named IIFE hai 
     console.log(`DB Connected`);
 })(); // semicolon compulsory hai lagana agr do IIFE likh rahe ho to 
