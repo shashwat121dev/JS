@@ -8,12 +8,8 @@ function SayMyName(){
 
 // SayMyName -> Jab khali ye likhte hai to hum reference dete hai 
 
+// SayMyName() => Jab ye likhte hai to hum function ko call karte hai.
 // SayMyName()
-// SayMyName()
-
-// function addTwoNumber(number1, number2) {
-//     console.log(number1 + number2);
-// }
 
 function addTwoNumber(number1, number2) {
     // let result = number1 + number2
@@ -35,4 +31,10 @@ function loginUserMessage(username = "Nobody"){ // Aaise default value de di jat
 
 console.log(loginUserMessage("Shashwat"));
 console.log(loginUserMessage());
-// agr kuch na pass kiya jaye argument me to undefined aata hai 
+// agr kuch na pass kiya jaye argument me to undefined aata hai agr default value na di ho to.
+
+const greet = function(){ // => Isko Function Expression bolte hain.
+     // Functions bina naam ke bhi banaye ja sakte hain. Aise functions ko Anonymous Function bolte hain.
+    console.log("Hello World"); 
+}
+console.log(greet); // => Ye pura function return karega kyuki humne function ko call nahi kiya hai.

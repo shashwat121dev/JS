@@ -5,6 +5,9 @@ function CalculateCartPrice(...num1){ // Rest operator
 // ... Lagane se ab jitna chahe utna arguments pass kar do sab ek array ke form me return ho jayega baad me use add kar lena .. simple 
 
 console.log(CalculateCartPrice(299,399,499));
+console.log(typeof CalculateCartPrice()); // => Object aayega kyuki array bhi object hi hota hai.
+
+// +++++++++++ Passing Object as an argument to a function +++++++++ 
 
 const user = {
     username: "Shashwat",
@@ -15,12 +18,14 @@ function HandleObject(anyObject){
     console.log(`username is ${anyObject.username} and price is ${anyObject.price}`);
 }
 
-// HandleObject(user) 
+//  HandleObject(user) 
 
 HandleObject({ // Direct bhi pass kr sakte the 
     username: "Sam",
     price: 399
 })
+
+// +++++++ Passing Array as an argument to a function ++++++++
 
 const myNewArray = [200,400,600,800]
 
