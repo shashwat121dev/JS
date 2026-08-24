@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur JS </title>
+</head>
+<body>
+
+    <h1>
+        Chai aur code se padh raha hu !!
+    </h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+
+</body>
+    <script>
+
+        const sayDate = function(str){
+            console.log(str, Date.now());
+        }
+
+        const intervalId = setInterval(sayDate,1000, "Shashwat")
+
+        clearInterval(intervalId)
+
+    </script>
+</html>
