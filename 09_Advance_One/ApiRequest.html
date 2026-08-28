@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API</title>
+</head>
+<body style="background-color: #212121;">
+    
+</body>
+
+<script>
+    const requestApi = 'https://api.github.com/users/hiteshchaudhary'
+
+    const xhr = new XMLHttpRequest();
+
+    xhr.open('GET',requestApi)
+
+    xhr.onreadystatechange = function(){
+        console.log(xhr.readyState);
+
+        if(xhr.readyState === 4){
+
+            const data = JSON.parse(this.responseText) // Ab ye object bn gaya hai 
+            console.log(typeof data); // Ye to string aata hai 
+            console.log(data);
+
+            console.log(data.followers);
+            
+        }
+        
+    }
+
+    xhr.send()
+</script>
+</html>
